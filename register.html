@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register as a visitor for Bridal Asia exhibitions in Mumbai and Delhi.">
+    <title>Visitor Registration - Bridal Asia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-light" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1>BRIDAL<span>ASIA</span></h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Get In Touch</a></li>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="register.html">Visitor Registration</a></li>
+                <li><a href="exhibitor-login.html">Exhibitor Login</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Visitor Registration</h1>
+            <p>Register to attend India's most prestigious bridal exhibitions</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Register
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container fade-in">
+                <div style="text-align: center; margin-bottom: 48px;">
+                    <h2 style="color: var(--charcoal); margin-bottom: 12px; font-weight: 400;">Register as a Visitor
+                    </h2>
+                    <p style="color: var(--medium-gray); font-size: 0.9rem;">Fill in your details to receive your
+                        exclusive invitation</p>
+                </div>
+
+                <form id="registrationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event">Select Exhibition</label>
+                        <select id="event" name="event" required>
+                            <option value="">Choose an exhibition</option>
+                            <option value="mumbai-feb-2026">Mumbai – 7 & 8 February 2026</option>
+                            <option value="delhi-mar-2026">Delhi – 7 & 8 March 2026</option>
+                            <option value="both">Both Exhibitions</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>I am interested in</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="interests" value="bridal-wear"> Bridal Wear</label>
+                            <label><input type="checkbox" name="interests" value="jewelry"> Jewelry</label>
+                            <label><input type="checkbox" name="interests" value="accessories"> Accessories</label>
+                            <label><input type="checkbox" name="interests" value="groom-wear"> Groom Wear</label>
+                            <label><input type="checkbox" name="interests" value="trousseau"> Trousseau</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weddingDate">Wedding Date (Approximate)</label>
+                        <input type="month" id="weddingDate" name="weddingDate">
+                    </div>
+
+                    <div class="form-group" style="margin-top: 32px;">
+                        <label
+                            style="display: flex; align-items: center; gap: 10px; font-weight: 400; cursor: pointer; text-transform: none; letter-spacing: 0; font-size: 0.85rem;">
+                            <input type="checkbox" name="newsletter"
+                                style="width: 18px; height: 18px; accent-color: var(--gold);">
+                            Subscribe to newsletter for updates and exclusive offers
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label
+                            style="display: flex; align-items: flex-start; gap: 10px; font-weight: 400; cursor: pointer; text-transform: none; letter-spacing: 0; font-size: 0.85rem;">
+                            <input type="checkbox" name="terms" required
+                                style="width: 18px; height: 18px; accent-color: var(--gold); margin-top: 2px;">
+                            <span>I agree to the <a href="#" style="color: var(--gold-dark);">Terms & Conditions</a> and
+                                <a href="#" style="color: var(--gold-dark);">Privacy Policy</a></span>
+                        </label>
+                    </div>
+
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">Complete Registration</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section style="padding: 80px 0; background: var(--cream);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Register</h2>
+                <p>Exclusive benefits for registered visitors</p>
+            </div>
+
+            <div class="stats-grid" style="background: var(--white); padding: 60px; box-shadow: var(--shadow-lg);">
+                <div class="stat-item" style="color: var(--charcoal);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+                        style="margin-bottom: 16px;">
+                        <rect x="3" y="4" width="18" height="16" rx="2" />
+                        <line x1="3" y1="10" x2="21" y2="10" />
+                    </svg>
+                    <p style="color: var(--charcoal);">Priority Entry Pass</p>
+                </div>
+                <div class="stat-item" style="color: var(--charcoal);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+                        style="margin-bottom: 16px;">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    <p style="color: var(--charcoal);">Exclusive Discounts</p>
+                </div>
+                <div class="stat-item" style="color: var(--charcoal);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+                        style="margin-bottom: 16px;">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    <p style="color: var(--charcoal);">Designer Previews</p>
+                </div>
+                <div class="stat-item" style="color: var(--charcoal);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+                        style="margin-bottom: 16px;">
+                        <path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-6" />
+                        <polyline points="12 15 12 3" />
+                        <polyline points="8 7 12 3 16 7" />
+                    </svg>
+                    <p style="color: var(--charcoal);">Complimentary Gift</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>BRIDAL<span style="color: #fff; font-weight: 300;">ASIA</span></h3>
+                    <p>India's premier showcase of bespoke bridal fashion, jewelry, and accessories. Creating
+                        unforgettable experiences since 1992.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            </svg></a>
+                        <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="magazine.html">Magazine</a></li>
+                        <li><a href="index.html#exhibitions">Exhibitions</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>For Partners</h4>
+                    <ul>
+                        <li><a href="exhibitor-login.html">Exhibitor Login</a></li>
+                        <li><a href="contact.html">Partner With Us</a></li>
+                        <li><a href="contact.html">Advertise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <span>D-4, A Block, LSC, Naraina Vihar</span>
+                    <span>New Delhi – 110028</span>
+                    <span style="margin-top: 15px;">+91 11 4505 5576</span>
+                    <span>info@bridalasia.com</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Bridal Asia. All Rights Reserved</p>
+                <p><a href="#">Terms</a> · <a href="#">Privacy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

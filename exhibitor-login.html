@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exhibitor Login - Access your Bridal Asia exhibitor dashboard.">
+    <title>Exhibitor Login - Bridal Asia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-light" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1>BRIDAL<span>ASIA</span></h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Get In Touch</a></li>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="register.html">Visitor Registration</a></li>
+                <li><a href="exhibitor-login.html">Exhibitor Login</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-container fade-in">
+            <div style="margin-bottom: 40px;">
+                <h1
+                    style="font-size: 1.3rem; letter-spacing: 4px; font-family: var(--font-body); font-weight: 500; color: var(--charcoal);">
+                    BRIDAL<span style="color: var(--gold); font-weight: 300;">ASIA</span></h1>
+            </div>
+
+            <h2>Exhibitor Portal</h2>
+            <p>Access your dashboard to manage your exhibition presence</p>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px;">
+                    <label
+                        style="display: flex; align-items: center; gap: 8px; font-weight: 400; cursor: pointer; font-size: 0.85rem; text-transform: none; letter-spacing: 0;">
+                        <input type="checkbox" name="remember"
+                            style="width: 16px; height: 16px; accent-color: var(--gold);">
+                        Remember me
+                    </label>
+                    <a href="#" style="color: var(--gold-dark); font-size: 0.85rem;">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Sign In</button>
+            </form>
+
+            <div class="login-divider">
+                <span>or</span>
+            </div>
+
+            <div class="login-links">
+                <p style="margin-bottom: 16px; color: var(--medium-gray); font-size: 0.9rem;">Don't have an exhibitor
+                    account?</p>
+                <a href="contact.html" class="btn btn-secondary" style="width: 100%;">Become an Exhibitor</a>
+            </div>
+
+            <div style="margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--light-gray);">
+                <p style="font-size: 0.8rem; color: var(--medium-gray);">
+                    For assistance, contact<br>
+                    <a href="mailto:exhibitors@bridalasia.com"
+                        style="color: var(--gold-dark);">exhibitors@bridalasia.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer
+        style="background: transparent; padding: 30px 0; text-align: center; position: absolute; bottom: 0; left: 0; right: 0;">
+        <div class="container">
+            <p style="color: var(--medium-gray); font-size: 0.75rem; letter-spacing: 1px;">
+                © 2026 Bridal Asia &nbsp;·&nbsp;
+                <a href="#" style="color: var(--gold-dark);">Terms</a> &nbsp;·&nbsp;
+                <a href="#" style="color: var(--gold-dark);">Privacy</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+
+            submitBtn.textContent = 'Signing in...';
+            submitBtn.disabled = true;
+
+            setTimeout(() => {
+                alert('Login functionality is for demonstration purposes.\nIn production, this would authenticate with a backend server.');
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+        });
+    </script>
+</body>
+
+</html>

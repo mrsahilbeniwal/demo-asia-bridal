@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bridal Asia - India's Most Luxurious Wedding Exhibition featuring exclusive designers, jewellers, and bridal couture. Register for upcoming exhibitions in Mumbai and Delhi.">
+    <meta name="keywords"
+        content="bridal exhibition, wedding fashion, indian bridal, luxury jewelry, bridal asia, wedding designers">
+    <title>Bridal Asia - India's Most Luxurious Wedding Exhibition</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1>BRIDAL<span>ASIA</span></h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Get In Touch</a></li>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="register.html">Visitor Registration</a></li>
+                <li><a href="exhibitor-login.html">Exhibitor Login</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="home">
+        <div class="slider-container">
+            <!-- Slide 1: Mumbai -->
+            <div class="hero-slide active" data-slide="0">
+                <div class="hero-bg">
+                    <img src="assets/hero_bridal_1.png" alt="Mumbai Bridal Exhibition">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>India's Most Luxurious <span class="gold">Wedding Exhibition</span></h1>
+                    <p class="hero-subtitle">Exclusive Designers & Jewellers</p>
+
+                    <div class="exhibition-dates">
+                        <div class="date-card featured">
+                            <h3>MUMBAI</h3>
+                            <p class="event-name">The Symphony of Jewels</p>
+                            <p class="date">7 – 8 February 2026</p>
+                            <p class="venue">Dome, SVP Stadium, Worli</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="register.html" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Delhi -->
+            <div class="hero-slide" data-slide="1">
+                <div class="hero-bg">
+                    <img src="assets/hero_bridal_2.png" alt="Delhi Bridal Exhibition">
+                </div>
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1>India's Most Luxurious <span class="gold">Wedding Exhibition</span></h1>
+                    <p class="hero-subtitle">Exclusive Designers & Jewellers</p>
+
+                    <div class="exhibition-dates">
+                        <div class="date-card featured">
+                            <h3>DELHI</h3>
+                            <p class="event-name">The Symphony of Jewels</p>
+                            <p class="date">7 – 8 March 2026</p>
+                            <p class="venue">Hotel Ashok, Chanakyapuri</p>
+                        </div>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="register.html" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <div class="slider-nav">
+            <button class="slider-dot active" data-slide="0"></button>
+            <button class="slider-dot" data-slide="1"></button>
+        </div>
+
+        <!-- Slider Arrows -->
+        <button class="slider-arrow slider-prev" aria-label="Previous slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+        </button>
+        <button class="slider-arrow slider-next" aria-label="Next slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="9 18 15 12 9 6" />
+            </svg>
+        </button>
+
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image fade-in">
+                    <img src="assets/jewelry_campaign.png" alt="Bridal Jewelry Collection">
+                </div>
+                <div class="about-text fade-in">
+                    <h2>About Bridal Asia</h2>
+                    <p>Bridal Asia is a premier showcase of bespoke bridal fashion, jewelry, and accessories from across
+                        the Asian subcontinent. Since 1992, we have been the definitive destination for discerning
+                        brides seeking the finest in wedding couture.</p>
+                    <p>At Bridal Asia Productions, we craft stunning visual campaigns that bring brands to life.
+                        Partnering with leading designers, our expert team delivers premium content that enhances
+                        visibility and resonates with audiences.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path
+                                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                                </svg>
+                            </div>
+                            <span>200+ Designers</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                                    <path d="M2 17L12 22L22 17" />
+                                    <path d="M2 12L12 17L22 12" />
+                                </svg>
+                            </div>
+                            <span>Luxury Jewellers</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="8" r="5" />
+                                    <path d="M3 21V19C3 16.2386 5.23858 14 8 14H16C18.7614 14 21 16.2386 21 19V21" />
+                                </svg>
+                            </div>
+                            <span>Bridal Couture</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12,6 12,12 16,14" />
+                                </svg>
+                            </div>
+                            <span>30+ Years Legacy</span>
+                        </div>
+                    </div>
+
+                    <a href="about.html" class="btn btn-primary" style="margin-top: 30px;">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symphony of Jewels Section -->
+    <section class="jewels-section" id="jewels">
+        <div class="container">
+            <div class="section-title">
+                <h2>The Symphony of Jewels</h2>
+                <p>Our signature campaign reaching over 10 million people across India, showcased on billboards,
+                    newspapers, digital ads, and social media</p>
+            </div>
+
+            <div class="jewels-content">
+                <div class="jewels-image fade-in">
+                    <img src="assets/jewel_collection.png" alt="Symphony of Jewels Campaign">
+                </div>
+                <div class="jewels-text fade-in">
+                    <h3>Luxury Jewelry Campaigns</h3>
+                    <p>The Bridal Asia shoot is a massive campaign that cements Bridal Asia as the top choice for
+                        wedding and festive fashion. We partner with India's most prestigious jewellers to create
+                        stunning visual narratives.</p>
+
+                    <div class="campaign-list">
+                        <div class="campaign-item">
+                            <span class="campaign-season">A/W 2025</span>
+                            <a href="gallery.html" class="campaign-link">View Campaign</a>
+                        </div>
+                        <div class="campaign-item">
+                            <span class="campaign-season">S/S 2025</span>
+                            <a href="gallery.html" class="campaign-link">View Campaign</a>
+                        </div>
+                        <div class="campaign-item">
+                            <span class="campaign-season">A/W 2024</span>
+                            <a href="gallery.html" class="campaign-link">View Campaign</a>
+                        </div>
+                    </div>
+
+                    <a href="gallery.html" class="btn btn-secondary" style="margin-top: 30px;">View All Campaigns</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibitions Section -->
+    <section class="exhibitions" id="exhibitions">
+        <div class="container">
+            <div class="section-title">
+                <h2>Upcoming Exhibitions</h2>
+                <p>Join us at India's most prestigious wedding exhibitions featuring exclusive designers and jewellers
+                </p>
+            </div>
+
+            <div class="exhibition-grid">
+                <div class="exhibition-card fade-in">
+                    <div class="exhibition-card-image">
+                        <img src="assets/exhibition_event.png" alt="Mumbai Exhibition">
+                    </div>
+                    <div class="exhibition-card-content">
+                        <h3>Mumbai Edition</h3>
+                        <p class="event-subtitle">The Symphony of Jewels</p>
+                        <div class="date-venue">
+                            <span>7 – 8 February 2026</span>
+                            <span>Dome, SVP Stadium, Worli</span>
+                            <span>11:00 AM – 8:00 PM</span>
+                        </div>
+                        <a href="register.html" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card fade-in">
+                    <div class="exhibition-card-image">
+                        <img src="assets/jewelry_campaign.png" alt="Delhi Exhibition">
+                    </div>
+                    <div class="exhibition-card-content">
+                        <h3>Delhi Edition</h3>
+                        <p class="event-subtitle">The Symphony of Jewels</p>
+                        <div class="date-venue">
+                            <span>7 – 8 March 2026</span>
+                            <span>Hotel Ashok, Chanakyapuri</span>
+                            <span>11:00 AM – 8:00 PM</span>
+                        </div>
+                        <a href="register.html" class="btn btn-primary">Register Now</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card fade-in">
+                    <div class="exhibition-card-image">
+                        <img src="assets/bridal_about_hero.png" alt="Special Event">
+                    </div>
+                    <div class="exhibition-card-content">
+                        <h3>Exclusive Preview</h3>
+                        <p class="event-subtitle">Designer Collections 2026</p>
+                        <div class="date-venue">
+                            <span>Coming Soon</span>
+                            <span>Multiple Cities</span>
+                            <span>By Invitation Only</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-secondary">Get Notified</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section class="campaigns" id="campaigns">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Campaigns</h2>
+                <p>Stunning visual campaigns that capture the essence of luxury bridal fashion</p>
+            </div>
+
+            <div class="campaigns-intro">
+                <p>We create tailored campaigns that capture the brand's essence, combining creativity and precision for
+                    powerful imagery. With a reach of 10 million+, our shoots ensure maximum visibility, amplifying your
+                    brand's presence across multiple platforms.</p>
+            </div>
+
+            <div class="campaigns-tabs">
+                <button class="tab-btn active">All</button>
+                <button class="tab-btn">A/W 2025</button>
+                <button class="tab-btn">S/S 2025</button>
+                <button class="tab-btn">A/W 2024</button>
+                <button class="tab-btn">Jewelry</button>
+            </div>
+
+            <div class="campaigns-grid">
+                <div class="campaign-card fade-in">
+                    <img src="assets/bridal_about_hero.png" alt="A/W 2025 Campaign">
+                    <div class="campaign-overlay">
+                        <h4>Autumn/Winter 2025</h4>
+                        <p>Latest Collection Showcase</p>
+                    </div>
+                </div>
+                <div class="campaign-card fade-in">
+                    <img src="assets/jewelry_campaign.png" alt="Jewelry Campaign">
+                    <div class="campaign-overlay">
+                        <h4>Symphony of Jewels</h4>
+                        <p>Exclusive Jewelry Collection</p>
+                    </div>
+                </div>
+                <div class="campaign-card fade-in">
+                    <img src="assets/exhibition_event.png" alt="S/S 2025 Campaign">
+                    <div class="campaign-overlay">
+                        <h4>Spring/Summer 2025</h4>
+                        <p>Bridal Fashion Week</p>
+                    </div>
+                </div>
+                <div class="campaign-card fade-in">
+                    <img src="assets/hero_background.png" alt="A/W 2024 Campaign">
+                    <div class="campaign-overlay">
+                        <h4>Autumn/Winter 2024</h4>
+                        <p>Heritage Collection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Receive exclusive invitations and the latest updates from Bridal Asia</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>BRIDAL<span style="color: #fff; font-weight: 300;">ASIA</span></h3>
+                    <p>India's premier showcase of bespoke bridal fashion, jewelry, and accessories. Creating
+                        unforgettable experiences since 1992.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="magazine.html">Magazine</a></li>
+                        <li><a href="index.html#exhibitions">Exhibitions</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>For Partners</h4>
+                    <ul>
+                        <li><a href="exhibitor-login.html">Exhibitor Login</a></li>
+                        <li><a href="contact.html">Partner With Us</a></li>
+                        <li><a href="contact.html">Advertise</a></li>
+                        <li><a href="#">Media Kit</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <span>D-4, A Block, LSC, Naraina Vihar</span>
+                    <span>New Delhi – 110028</span>
+                    <span style="margin-top: 15px;">+91 11 4505 5576</span>
+                    <span>info@bridalasia.com</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Bridal Asia. All Rights Reserved</p>
+                <p><a href="#">Terms</a> · <a href="#">Privacy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

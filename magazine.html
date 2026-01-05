@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bridal Asia Magazine - Explore our digital magazines featuring the latest in bridal fashion.">
+    <title>Magazine - Bridal Asia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-light" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <h1>BRIDAL<span>ASIA</span></h1>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Get In Touch</a></li>
+                <li><a href="magazine.html">Magazine</a></li>
+                <li><a href="register.html">Visitor Registration</a></li>
+                <li><a href="exhibitor-login.html">Exhibitor Login</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>The Magazine</h1>
+            <p>Explore our digital editions featuring the latest bridal trends and exclusive designer spotlights</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Magazine
+            </div>
+        </div>
+    </section>
+
+    <!-- Magazine Section -->
+    <section class="magazine-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest Editions</h2>
+                <p>Click on any magazine to open in our interactive book viewer</p>
+            </div>
+
+            <div class="magazine-grid">
+                <div class="magazine-card fade-in" onclick="openMagazine('spring2026')">
+                    <div class="magazine-cover">
+                        <img src="assets/magazine_spring.png" alt="Spring 2026 Edition">
+                    </div>
+                    <div class="magazine-info">
+                        <h4>Spring 2026</h4>
+                        <p>Fresh Beginnings</p>
+                    </div>
+                </div>
+
+                <div class="magazine-card fade-in" onclick="openMagazine('winter2025')">
+                    <div class="magazine-cover">
+                        <img src="assets/magazine_winter.png" alt="Winter 2025 Edition">
+                    </div>
+                    <div class="magazine-info">
+                        <h4>Winter 2025</h4>
+                        <p>Royal Elegance</p>
+                    </div>
+                </div>
+
+                <div class="magazine-card fade-in" onclick="openMagazine('festive')">
+                    <div class="magazine-cover">
+                        <img src="assets/magazine_festive.png" alt="Festive Edition">
+                    </div>
+                    <div class="magazine-info">
+                        <h4>Festive Special</h4>
+                        <p>Wedding Season</p>
+                    </div>
+                </div>
+
+                <div class="magazine-card fade-in" onclick="openMagazine('jewelry')">
+                    <div class="magazine-cover">
+                        <img src="assets/magazine_jewelry.png" alt="Jewelry Edition">
+                    </div>
+                    <div class="magazine-info">
+                        <h4>Symphony of Jewels</h4>
+                        <p>Jewelry Showcase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section style="padding: 100px 0; background: var(--cream);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Inside Every Edition</h2>
+                <p>Curated content to inspire your bridal journey</p>
+            </div>
+
+            <div class="stats-grid" style="background: var(--white); padding: 60px; box-shadow: var(--shadow-lg);">
+                <div class="stat-item" style="color: var(--charcoal);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+                        style="margin-bottom: 16px;">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                        <line x1="7" y1="7" x2="7.01" y2="7" />
+                    </svg>
+                    <p style="color: var(--charcoal);">Designer Spotlights</p>
+                </div>
+                <div class="stat-item" style="color: var(--charcoal);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+                        style="margin-bottom: 16px;">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                    <p style="color: var(--charcoal);">Jewelry Trends</p>
+                </div>
+                <div class="stat-item" style="color: var(--charcoal);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+                        style="margin-bottom: 16px;">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                        <circle cx="8.5" cy="8.5" r="1.5" />
+                        <polyline points="21 15 16 10 5 21" />
+                    </svg>
+                    <p style="color: var(--charcoal);">Photo Editorials</p>
+                </div>
+                <div class="stat-item" style="color: var(--charcoal);">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"
+                        style="margin-bottom: 16px;">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                    </svg>
+                    <p style="color: var(--charcoal);">Style Guides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Never Miss an Edition</h2>
+            <p>Subscribe to receive our digital magazines directly in your inbox</p>
+            <form class="newsletter-form" id="magazineSubscribe">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Magazine Viewer -->
+    <div class="magazine-viewer" id="magazineViewer">
+        <button class="viewer-close" onclick="closeMagazine()">×</button>
+
+        <div class="book-container">
+            <div class="book" id="book">
+                <div class="book-spine"></div>
+
+                <div class="book-page" id="page1" style="z-index: 10;" onclick="flipPage(1)">
+                    <div class="page-front">
+                        <img src="assets/magazine_spring.png" alt="Cover" id="coverImage">
+                    </div>
+                    <div class="page-back">
+                        <div
+                            style="padding: 48px; height: 100%; display: flex; flex-direction: column; justify-content: center; background: var(--cream);">
+                            <h2 style="color: var(--charcoal); margin-bottom: 24px; font-size: 1.8rem;">Editor's Note
+                            </h2>
+                            <p style="color: var(--charcoal); opacity: 0.8; line-height: 1.9; font-size: 0.9rem;">
+                                Welcome to this special edition of Bridal Asia Magazine. In this issue, we explore the
+                                latest trends in bridal fashion, featuring exclusive interviews with India's top
+                                designers.</p>
+                            <p
+                                style="color: var(--charcoal); opacity: 0.8; line-height: 1.9; margin-top: 16px; font-size: 0.9rem;">
+                                Whether planning your dream wedding or seeking inspiration, we hope this edition brings
+                                you closer to finding your perfect bridal look.</p>
+                            <p style="color: var(--gold-dark); margin-top: 24px; font-style: italic;">— The Bridal Asia
+                                Team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-page" id="page2" style="z-index: 9;" onclick="flipPage(2)">
+                    <div class="page-front">
+                        <img src="assets/bridal_about_hero.png" alt="Fashion Spread">
+                    </div>
+                    <div class="page-back">
+                        <div
+                            style="padding: 48px; height: 100%; display: flex; flex-direction: column; justify-content: center; background: var(--cream);">
+                            <h2 style="color: var(--charcoal); margin-bottom: 24px; font-size: 1.8rem;">Trend Report
+                                2026</h2>
+                            <ul
+                                style="color: var(--charcoal); opacity: 0.8; line-height: 2.2; font-size: 0.9rem; list-style: none;">
+                                <li style="margin-bottom: 8px;">— Soft pastels & blush tones</li>
+                                <li style="margin-bottom: 8px;">— Sustainable luxury fabrics</li>
+                                <li style="margin-bottom: 8px;">— Contemporary silhouettes</li>
+                                <li style="margin-bottom: 8px;">— Minimalist jewelry statements</li>
+                                <li>— Hand-embroidered details</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-page" id="page3" style="z-index: 8;" onclick="flipPage(3)">
+                    <div class="page-front">
+                        <img src="assets/jewelry_campaign.png" alt="Jewelry Feature">
+                    </div>
+                    <div class="page-back">
+                        <div
+                            style="padding: 48px; height: 100%; display: flex; flex-direction: column; justify-content: center; background: var(--cream);">
+                            <h2 style="color: var(--charcoal); margin-bottom: 24px; font-size: 1.8rem;">Symphony of
+                                Jewels</h2>
+                            <p style="color: var(--charcoal); opacity: 0.8; line-height: 1.9; font-size: 0.9rem;">This
+                                season's jewelry collection celebrates the timeless beauty of Indian craftsmanship. From
+                                intricate kundan work to contemporary diamond settings, each piece tells a story of
+                                heritage and elegance.</p>
+                            <p
+                                style="color: var(--gold-dark); margin-top: 24px; font-size: 0.85rem; letter-spacing: 1px;">
+                                Featured: House of Jewels, Tanishq, Kalyan Jewellers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="book-page" id="page4" style="z-index: 7;" onclick="flipPage(4)">
+                    <div class="page-front">
+                        <img src="assets/exhibition_event.png" alt="Exhibition Preview">
+                    </div>
+                    <div class="page-back">
+                        <div
+                            style="padding: 48px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; background: var(--charcoal); text-align: center;">
+                            <h2 style="color: var(--white); margin-bottom: 24px; font-size: 1.8rem;">Join Us</h2>
+                            <p
+                                style="color: var(--gold-light); margin-bottom: 32px; font-size: 0.9rem; line-height: 1.8;">
+                                Mumbai: 7 – 8 February 2026<br>Delhi: 7 – 8 March 2026</p>
+                            <p style="color: var(--white); font-size: 0.85rem; letter-spacing: 2px;">bridalasia.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="viewer-nav">
+            <button onclick="prevPage()">Previous</button>
+            <span id="pageIndicator">Page 1 of 4</span>
+            <button onclick="nextPage()">Next</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>BRIDAL<span style="color: #fff; font-weight: 300;">ASIA</span></h3>
+                    <p>India's premier showcase of bespoke bridal fashion, jewelry, and accessories. Creating
+                        unforgettable experiences since 1992.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></a>
+                        <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            </svg></a>
+                        <a href="#" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="magazine.html">Magazine</a></li>
+                        <li><a href="index.html#exhibitions">Exhibitions</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>For Partners</h4>
+                    <ul>
+                        <li><a href="exhibitor-login.html">Exhibitor Login</a></li>
+                        <li><a href="contact.html">Partner With Us</a></li>
+                        <li><a href="contact.html">Advertise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links footer-contact">
+                    <h4>Contact</h4>
+                    <span>D-4, A Block, LSC, Naraina Vihar</span>
+                    <span>New Delhi – 110028</span>
+                    <span style="margin-top: 15px;">+91 11 4505 5576</span>
+                    <span>info@bridalasia.com</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Bridal Asia. All Rights Reserved</p>
+                <p><a href="#">Terms</a> · <a href="#">Privacy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        let currentPage = 0;
+        const totalPages = 4;
+
+        function openMagazine(edition) {
+            const viewer = document.getElementById('magazineViewer');
+            const coverImage = document.getElementById('coverImage');
+
+            const covers = {
+                'spring2026': 'assets/magazine_spring.png',
+                'winter2025': 'assets/magazine_winter.png',
+                'festive': 'assets/magazine_festive.png',
+                'jewelry': 'assets/magazine_jewelry.png'
+            };
+
+            coverImage.src = covers[edition] || covers['spring2026'];
+            currentPage = 0;
+            resetPages();
+            updatePageIndicator();
+            viewer.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMagazine() {
+            const viewer = document.getElementById('magazineViewer');
+            viewer.classList.remove('active');
+            document.body.style.overflow = '';
+            resetPages();
+        }
+
+        function resetPages() {
+            for (let i = 1; i <= totalPages; i++) {
+                const page = document.getElementById('page' + i);
+                if (page) page.classList.remove('flipped');
+            }
+        }
+
+        function flipPage(pageNum) {
+            const page = document.getElementById('page' + pageNum);
+            if (page) {
+                if (page.classList.contains('flipped')) {
+                    page.classList.remove('flipped');
+                    currentPage = pageNum - 1;
+                } else {
+                    page.classList.add('flipped');
+                    currentPage = pageNum;
+                }
+                updatePageIndicator();
+            }
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                const page = document.getElementById('page' + currentPage);
+                if (page) {
+                    page.classList.add('flipped');
+                    updatePageIndicator();
+                }
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 0) {
+                const page = document.getElementById('page' + currentPage);
+                if (page) {
+                    page.classList.remove('flipped');
+                    currentPage--;
+                    updatePageIndicator();
+                }
+            }
+        }
+
+        function updatePageIndicator() {
+            document.getElementById('pageIndicator').textContent = `Page ${currentPage + 1} of ${totalPages + 1}`;
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeMagazine();
+            if (e.key === 'ArrowRight') nextPage();
+            if (e.key === 'ArrowLeft') prevPage();
+        });
+    </script>
+</body>
+
+</html>
